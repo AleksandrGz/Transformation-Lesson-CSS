@@ -1,0 +1,181 @@
+#parent{
+	width: 40%;
+	margin: 0 auto;
+	text-align: center;
+}
+.all{
+	border-bottom: 1px solid #808080;
+	position: relative;
+}
+#elem1{
+	width: 100px;
+	height: 100px;
+	margin: 50px auto;
+	border: 1px solid red;
+	transition:1s linear;
+}
+#elem1:hover{
+	transform: rotate(45deg);
+}
+#elem2{
+	width: 100px;
+	height: 100px;
+	margin: 50px auto;
+	border: 1px solid red;
+	transition:1s linear;
+}
+#elem2:hover{
+	transform: scale(1.5);
+}
+#elem3{
+	width: 100px;
+	height: 100px;
+	margin: 50px auto;
+	border: 1px solid red;
+	transition:1s linear;
+}
+#elem3:hover{
+	transform: skew(45deg);
+}
+#elem4{
+	width: 100px;
+	height: 100px;
+	margin: 50px auto;
+	border: 1px solid red;
+	transition:1s linear;
+}
+#elem4:hover{
+	transform: translate(40px);
+}
+#elem5{
+	width: 100px;
+	height: 100px;
+	margin: 50px auto;
+	border: 1px solid red;
+	transition:1s linear;
+}
+#elem5:hover{
+	transform: translate(40px, 40px);
+}
+#elem6{
+	height: 600px;
+	display: flex;
+	align-items: center;
+	box-sizing: border-box;
+}
+#circle1{
+	width: 250px;
+	height: 250px;
+	border: 1px solid red;
+	margin: 0 auto;
+	border-radius: 100%;
+}
+#circle2{
+	width: 50px;
+	height: 50px;
+	border: 1px solid red;
+	border-radius:100%;
+	position: absolute;
+	animation: anim1 9s linear infinite, anim2 5s linear infinite;
+	transform-origin:266px center;
+}
+@keyframes anim1{
+	0%{transform: rotate(0deg);}
+	100%{transform: rotate(360deg);}
+}
+@keyframes anim2{
+	0%{background-color: white}
+	50%{background-color: red}
+	100%{background-color: white}
+}
+#elem7{
+	margin: 100px auto;
+	display: flex;
+	justify-content: space-between;
+}
+#elem7 a{
+	width: 100px;
+	line-height:50px;
+	border: 1px solid blue;
+	background-color: white;
+	text-decoration: none;
+	font: 12px;
+	color: blue;
+	transition: 0.5s linear;
+}
+#elem7 a:hover{
+	transform: rotate(10deg) scale(1.1);
+}
+#elem7 a.active{
+	transform: rotate(10deg) scale(1.1);
+}
+#elem8{
+	margin: 50px auto;
+	display: flex;
+	justify-content: space-between;
+	transform: rotate(-5deg);
+}
+#elem8 a{
+	width: 100px;
+	line-height:50px;
+	border: 1px solid blue;
+	background-color: white;
+	text-decoration: none;
+	font: 12px;
+	color: blue;
+	transition: 0.5s linear;
+}
+#elem8 a:hover{
+	transform: scale(1.2) skew(-5deg);
+}
+#elem9{
+	margin: 100px auto;
+	display: flex;
+	justify-content: space-between;
+	transform: skew(-5deg);
+}
+#elem9 a{
+	width: 100px;
+	line-height:50px;
+	border: 1px solid blue;
+	background-color: white;
+	text-decoration: none;
+	font: 12px;
+	color: blue;
+	transition: 0.5s linear;
+}
+#elem9 a:hover{
+	transform: scale(1.3);
+}
+#elem10{
+	width: 300px;
+	margin: 50px auto;
+}
+#elem10 p{
+	width:300px;
+	font-size: 18px;
+	text-align: justify;
+}
+#elem10 a{
+	position: absolute;
+	width: 150px;
+	line-height:50px;
+	border: 1px solid black;
+	text-decoration: none;
+	color: blue;
+	transform: rotate(90deg);
+	font-size:24px;
+	font-family: arial;
+	right: -50px;
+	bottom: 235.5px;
+}
+#elem11{
+	width: 300px;
+	margin: 50px auto;
+}
+#elem11 p{
+	width:300px;
+	font-size: 18px;
+	text-align: justify;
+	transform: skew(5deg);
+}
